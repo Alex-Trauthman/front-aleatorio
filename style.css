@@ -1,0 +1,238 @@
+/* Estilo Global */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #e5e5e5;
+    color: #333;
+  }
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .container {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .container figure{
+    width: 80%;
+    margin: 0 auto
+  }
+  .container figure img{
+    width: 100%;
+    display: block;
+    margin: 0 auto
+  }
+  .container figure figcaption{
+    margin-top: 10px;
+    text-align: right;
+    font-size: 0.8em;
+  }
+  
+  /* Cabeçalho */
+  .container header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .page-header
+ {
+    background-image: linear-gradient(to bottom, #ffffff, #b8b8b8);
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .site-title {
+    margin: 0;
+    font-size: 2em;
+    color: #222;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-list li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nav-list li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Conteúdo da Notícia */
+  .news-article {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .article-header h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .news-meta {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+  }
+  
+  .article-content p {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+  }
+  
+  /* Rodapé da Notícia */
+  .article-footer {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-size: 0.9em;
+    color: #4f4f4f;
+  }
+  
+  /* Rodapé do Site */
+  .container footer {
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .h3{
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .page-footer{
+    background-image: linear-gradient(to top, #ffffff, #b8b8b8);
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #4f4f4f;
+  }
+  
+  /* Responsividade para celulares e tablets */
+  
+  /* Para telas menores (até 768px) */
+  @media only screen and (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .container figure{
+        width: 90%;
+        margin: 0 auto
+    }
+    .site-title {
+      font-size: 1.8em;
+    }
+    .container figure figcaption{
+        margin-top: 10px;
+        text-align: right;
+        font-size: 0.6em;
+    }
+   
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .article-header h2 {
+      font-size: 1.8em;
+    }
+  
+    .article-content p {
+      font-size: 1em;
+    }
+    .article-content h3 {
+        font-size: 1.4em;
+    }
+  }
+  
+  /* Para orientações específicas em dispositivos móveis */
+  
+  /* Modo Retrato */
+  @media only screen and (max-width: 768px) and (orientation: portrait) {
+    .header-container, .footer-container {
+      text-align: center;
+    }
+    .nav-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .container figure{
+        width: 100%;
+        margin: 0 auto
+    }
+    .container figure figcaption{
+        margin-top: 10px;
+        text-align: right;
+        font-size: 0.6em;
+      }
+    .container {
+        width: 95%;
+        max-width: 768px;
+        margin: 0 auto;
+        
+    }
+    .article-content p{
+        font-size: 0.8em;
+    }
+    .article-header h2{
+        font-size: 1.3em;
+    }
+    .article-content h3 {
+        font-size: 1em;
+    }
+  }
+  
+  /* Modo Paisagem */
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    .header-container, .footer-container {
+      text-align: center;
+    }
+    .nav-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .container figure figcaption{
+        margin-top: 10px;
+        text-align: right;
+        font-size: 0.6em;
+    }
+    .container {
+        width: 90%;
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+  }
+  
